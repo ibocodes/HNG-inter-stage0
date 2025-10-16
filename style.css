@@ -1,0 +1,170 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(var(--vh, 1vh) * 100); /* 👈 dynamic height fix */
+  margin: 0;
+  padding: 1rem;
+}
+
+/* ===== PROFILE CARD ===== */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+  max-width: 350px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== IMAGE ===== */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #0077ff;
+}
+
+/* ===== TEXT ===== */
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+}
+
+.profile-bio {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/* ===== SOCIAL LINKS ===== */
+nav .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  color: #005fcc;
+  outline: none;
+}
+
+/* ===== HOBBIES & DISLIKES SECTIONS ===== */
+section[data-testid="test-user-hobbies"],
+section[data-testid="test-user-dislikes"] {
+  margin-top: 1.5rem;
+  text-align: left;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings (Hobbies / Dislikes) */
+section[data-testid="test-user-hobbies"] h3,
+section[data-testid="test-user-dislikes"] h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Lists */
+section[data-testid="test-user-hobbies"] ul,
+section[data-testid="test-user-dislikes"] ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Each list item */
+section[data-testid="test-user-hobbies"] li,
+section[data-testid="test-user-dislikes"] li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Optional decorative bullet using ::before */
+section[data-testid="test-user-hobbies"] li::before,
+section[data-testid="test-user-dislikes"] li::before {
+  content: "•";
+  color: #0077ff;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+
+/* ===== BUTTON ===== */
+.follow-btn {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.follow-btn:hover,
+.follow-btn:focus {
+  background-color: #005fcc;
+  outline: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  main[data-testid="main-container"] {
+    margin-left: 30px; /* or 1rem if needed */
+  }
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+  }
+
+  .profile-title {
+    font-size: 0.95rem;
+  }
+}

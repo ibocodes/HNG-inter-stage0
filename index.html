@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main data-testid="main-container">
+      <article class="profile-card" data-testid="profile-card">
+        <h2 class="profile-name" data-testid="profile-name">
+          Ahka David Uzochi
+        </h2>
+        <p class="profile-title" data-testid="profile-title">
+          Frontend Developer-Aviation Staff
+        </p>
+
+        <p class="profile-bio" data-testid="profile-bio">
+          Passionate about creating accessible and user-friendly web
+          experiences.
+        </p>
+
+        <figure>
+          <img
+            src="image/codewithibo.jpeg"
+            alt="Profile picture of ahka david uzochi"
+            class="profile-image"
+            data-testid="profile-image"
+          />
+        </figure>
+
+        <nav aria-label="Social links" data-testid="test-user-social-links">
+          <ul class="social-links" data-testid="social-links">
+            <li>
+              <a
+                href="https://www.tiktok.com/@ibodev1"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="social-link-tiktok"
+              >
+                Tiktok
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/ibocodes"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="social-link-github"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="profile-time" data-testid="test-user-time"></p>
+
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Coding</li>
+            <li>Music</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Slow Wi-Fi</li>
+            <li>Bugs in code</li>
+          </ul>
+        </section>
+
+        <button class="follow-btn" data-testid="follow-button">Follow</button>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
