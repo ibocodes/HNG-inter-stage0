@@ -218,6 +218,7 @@ section[data-testid="test-user-dislikes"] li::before {
 /* ===== FORM INPUTS ===== */
 form .form-group {
   text-align: left;
+  margin-top: 30px;
   margin-bottom: 1.2rem;
 }
 
@@ -279,6 +280,34 @@ form button:focus {
   margin-top: 1rem;
 }
 
+/* ===== ABOUT-US ===== */
+.about-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 2rem;
+  max-width: 900px;
+  width: 90%;
+  margin: 2rem auto;
+  margin-top: 160px;
+}
+
+.about-card section {
+  margin-bottom: 1.5rem;
+}
+
+.about-card h2 {
+  color: #0077ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.about-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
   .navbar nav {
@@ -310,5 +339,10 @@ form button:focus {
 
   .profile-title {
     font-size: 0.95rem;
+  }
+
+  .about-card {
+    margin-top: 250px;
+  
   }
 }
